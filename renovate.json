@@ -2,5 +2,17 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
 		"config:best-practices"
+	],
+	"packageRules": [
+		{
+			"matchPackageNames": [
+				"astral-sh/setup-uv"
+			],
+			"matchManagers": [
+				"github-actions"
+			],
+			"matchCurrentVersion": "<8.0.0",
+			"replacementVersion": "v8.0.0"
+		}
 	]
 }
