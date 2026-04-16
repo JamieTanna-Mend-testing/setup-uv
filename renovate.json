@@ -3,16 +3,5 @@
 	"extends": [
 		"config:best-practices"
 	],
-	"packageRules": [
-		{
-			"matchPackageNames": [
-				"astral-sh/setup-uv"
-			],
-			"matchDatasources": [
-				"github-tags"
-			],
-			"replacementName": "astral-sh/setup-uv",
-			"replacementVersion": "v8.0.0"
-		}
-	]
+	"packageRules": []
 }
