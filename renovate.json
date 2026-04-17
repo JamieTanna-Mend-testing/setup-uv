@@ -14,6 +14,14 @@
 			"extends": [
 				"config:best-practices"
 			]
+		},
+		{
+			"matchFileNames": [
+				".github/workflows/ci-pinning-semver.yml"
+			],
+			"extends": [
+				"helpers:pinGitHubActionDigestsToSemver"
+			]
 		}
 	]
 }
