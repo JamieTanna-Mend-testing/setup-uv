@@ -14,8 +14,8 @@ jobs:
       - name: Install the latest version of uv
         uses: astral-sh/setup-uv@v7
 
-      - name: Don't downgrade me!
-        uses: astral-sh/setup-uv@v8.1.0
+      # - name: Don't downgrade me!
+      #   uses: astral-sh/setup-uv@v8.1.0
 
       - name: Install dependencies
         run: uv sync
