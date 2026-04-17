@@ -6,6 +6,14 @@
 				".github/workflows/ci-pinning.yml"
 			],
 			"pinDigests": true
+		},
+		{
+			"matchFileNames": [
+				".github/workflows/ci-pinning-best-practices.yml"
+			],
+			"extends": [
+				"config:best-practices"
+			]
 		}
 	]
 }
