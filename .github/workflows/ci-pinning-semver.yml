@@ -14,9 +14,9 @@ jobs:
       - name: Install the latest version of uv
         uses: astral-sh/setup-uv@v7
 
-      # already pinned, but not to semver
-      - name: Install the latest version of uv
-        uses: astral-sh/setup-uv@e06108dd0aef18192324c70427afc47652e63a82 # v7
+      # # already pinned, but not to semver
+      # - name: Install the latest version of uv
+      #   uses: astral-sh/setup-uv@e06108dd0aef18192324c70427afc47652e63a82 # v7
 
       # already pinned
       - name: Install the latest version of uv
