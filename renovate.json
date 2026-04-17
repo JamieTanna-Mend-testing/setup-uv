@@ -20,6 +20,9 @@
 		},
 		{
 			"description": "helpers:pinGitHubActionDigestsToSemver",
+			"matchFileNames": [
+				".github/workflows/ci-pinning-semver.yml"
+			],
 			"matchDepTypes": [
 				"action"
 			],
