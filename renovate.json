@@ -1,5 +1,6 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"dependencyDashboard": true,
 	"packageRules": [
 		{
 			"matchFileNames": [
@@ -8,20 +9,28 @@
 			"pinDigests": true
 		},
 		{
+			"description": "helpers:pinGitHubActionDigestsToSemver",
 			"matchFileNames": [
 				".github/workflows/ci-pinning-best-practices.yml"
 			],
-			"extends": [
-				"config:best-practices"
-			]
+			"matchDepTypes": [
+				"action"
+			],
+			"pinDigests": true
 		},
 		{
-			"matchFileNames": [
-				".github/workflows/ci-pinning-semver.yml"
+			"description": "helpers:pinGitHubActionDigestsToSemver",
+			"matchDepTypes": [
+				"action"
 			],
-			"extends": [
-				"helpers:pinGitHubActionDigestsToSemver"
-			]
+			"pinDigests": true,
+			"extractVersion": "^(?<version>v?\\d+\\.\\d+\\.\\d+)$"
+		},
+		{
+			"matchPackageNames": [
+				"astral-sh/setup-uv"
+			],
+			"versioning": "github-actions"
 		}
 	]
 }
