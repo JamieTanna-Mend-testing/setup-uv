@@ -9,7 +9,7 @@
 			"pinDigests": true
 		},
 		{
-			"description": "helpers:pinGitHubActionDigestsToSemver",
+			"description": "helpers:pinGitHubActionDigests",
 			"matchFileNames": [
 				".github/workflows/ci-pinning-best-practices.yml"
 			],
